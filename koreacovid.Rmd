@@ -36,14 +36,11 @@ with(kRdata, table(Sex, result))
 
 ```
 
-## We create two bar charts - one based on frequency and the other on percent
+## We create two bar charts - one based on frequency and the other on percent, use ggplot commands to do this
 
-```{r}
-barchartGC(~result + Sex,data=kRdata, main ="Frequency Bar Chart")
-```
+`
 
   
-### this bar chart is displaying in total frequency terms our data.  Clearly there are a lot less dead people than alive people as is reflected by the sizes of the bars in the display.  
 
 
 
