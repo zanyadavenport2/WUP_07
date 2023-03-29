@@ -15,30 +15,23 @@ require(tigerstats)
 require(lubridate)
 kRdata <- read.csv(file = 'kRdata.csv')
 ```
-### Data is from the Patient_Info dataset from South Korea 1 Jan to 1 May 
-### This is contained in a downloadable zip file from kaggle
+### Data is from the Patient_Info dataset from South Korea 1 Jan to 1 May 2020
+### This data was retrieved from a downloadable zip file from kaggle
 
 Some of the data was uncoded for sex - sex must be just male or female
 77 of the data entries were coded sex  as blank, so we omit these.
 state of a patient must be died or alive - we adjust that as well   
   
-# Question 1 - Is dying independent of sex
+# Your Question - Is dying independent of sex?
 
 
 
 
-Table of patients:
-```{r}
 
-# cross tabulation, patient state by gender
 
-with(kRdata, table(Sex, result))
+## Graphical results - use ggplot commands to do this  
 
-```
 
-## We create two bar charts - one based on frequency and the other on percent, use ggplot commands to do this
-
-`
 
   
 
