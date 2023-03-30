@@ -1,7 +1,7 @@
 ---
-title: "covid 19"
-author: "Dr K"
-date: "5/2/2020"
+title: "Initial Korean covid 19"
+author: "your name here"
+date: "todays date"
 output:
   html_document: default
   pdf_document: default
@@ -14,6 +14,9 @@ require(tidyverse)
 require(tigerstats)
 require(lubridate)
 kRdata <- read.csv(file = 'kRdata.csv')
+kRdata <- kRdata %>%
+mutate(across(where(is.character), as.factor))
+
 ```
 ### Data is from the Patient_Info dataset from South Korea 1 Jan to 1 May 2020
 ### This data was retrieved from a downloadable zip file from kaggle
