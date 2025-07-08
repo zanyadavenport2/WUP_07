@@ -70,9 +70,13 @@ When looking at the numbers 64 out of 100 males are dead and 36 out of 100 femal
 
 ## Inferential results 
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
-
-
+Based off the statistics covid is killing more males than females. 
 
 ## Conclusions
 
